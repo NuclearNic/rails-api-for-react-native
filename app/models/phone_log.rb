@@ -1,0 +1,2 @@
+class PhoneLog < ApplicationRecord
+end
