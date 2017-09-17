@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  device_id: MyString
+  unique_id: MyString
+  brand: MyString
+  build_number: MyString
+  bundle_id: MyString
+  device_country: MyString
+  device_locale: MyString
+  device_name: MyString
+  instance_id: MyString
+  manufacturer: MyString
+  model: MyString
+  readable_version: MyString
+  system_name: MyString
+  system_version: MyString
+  timezone: MyString
+  user_agent: MyString
+  version: MyString
+  is_emulator: false
+  is_tablet: false
+
+two:
+  device_id: MyString
+  unique_id: MyString
+  brand: MyString
+  build_number: MyString
+  bundle_id: MyString
+  device_country: MyString
+  device_locale: MyString
+  device_name: MyString
+  instance_id: MyString
+  manufacturer: MyString
+  model: MyString
+  readable_version: MyString
+  system_name: MyString
+  system_version: MyString
+  timezone: MyString
+  user_agent: MyString
+  version: MyString
+  is_emulator: false
+  is_tablet: false

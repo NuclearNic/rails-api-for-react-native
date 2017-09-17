@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170916163326) do
+ActiveRecord::Schema.define(version: 20170917130904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "device_data", force: :cascade do |t|
+    t.string "device_id"
+    t.string "unique_id"
+    t.string "brand"
+    t.string "build_number"
+    t.string "bundle_id"
+    t.string "device_country"
+    t.string "device_locale"
+    t.string "device_name"
+    t.string "instance_id"
+    t.string "manufacturer"
+    t.string "model"
+    t.string "readable_version"
+    t.string "system_name"
+    t.string "system_version"
+    t.string "timezone"
+    t.string "user_agent"
+    t.string "version"
+    t.boolean "is_emulator"
+    t.boolean "is_tablet"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "geolocations", force: :cascade do |t|
     t.string "latitude"
