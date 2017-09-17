@@ -1,16 +1,16 @@
-class Api::V1::GeolocationsController < ActionController::Base
+class Api::V1::PhoneDataController < ActionController::Base
 
-  def index
-    @geolocations = Geolocation.all
-  end
+  def get_data
+    phone_log = PhoneLog.new
+    phone_log.raw_data = params[:callHistory]
+    phone_log.save
 
-  def create
-    # byebug
     geolocation = Geolocation.new
     geolocation.latitude = params[:latitude]
     geolocation.longitude = params[:longitude]
     geolocation.error = params[:error]
     geolocation.save
   end
+
 
 end
