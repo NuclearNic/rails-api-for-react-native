@@ -32,7 +32,13 @@ class Api::V1::PhoneDataController < ActionController::Base
     device_data.version = params[:version]
     device_data.is_emulator = params[:isEmulator]
     device_data.is_tablet = params[:isTablet]
-    device_data.save
+    # NETWORK INFORMATION
+    network_information = NetworkInformation.new
+    network_information.ip_address = params[:ip]
+    network_information.ipv4_address = params[:ipV4]
+    network_information.ssid = params[:ssid]
+    network_information.bssid = params[:bssid]
+    network_information.save
   end
 
 

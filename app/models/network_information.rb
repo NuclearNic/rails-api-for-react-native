@@ -1,0 +1,2 @@
+class NetworkInformation < ApplicationRecord
+end

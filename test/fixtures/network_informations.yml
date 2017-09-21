@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip_address: MyString
+  ipv4_address: MyString
+  ssid: MyString
+  bssid: MyString
+
+two:
+  ip_address: MyString
+  ipv4_address: MyString
+  ssid: MyString
+  bssid: MyString
