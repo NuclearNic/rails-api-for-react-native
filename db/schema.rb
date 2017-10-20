@@ -12,9 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170917133630) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "device_data", force: :cascade do |t|
     t.string "device_id"
     t.string "unique_id"
